@@ -49,4 +49,10 @@ public class InfoActivity extends AppCompatActivity {
             startActivity(mapIntent);
         }
     }
+    public void createPhoneIntent(View view){
+        Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+        dialIntent.setData(Uri.parse("tel:0123456789"));
+        startActivity(dialIntent);
+
+    }
 }
